@@ -1,0 +1,32 @@
+<div class="row">
+<div class="col-md-12">
+  <div class="table-responsive">
+    <table  class="table table-bordered table-striped">
+        <thead id="customers" style="background-color: #003768; color: #fff;">
+            <tr>
+                <th class="center">Name</th>
+                <th class="center">Age</th>
+                <th class="center">Designation</th>
+                <th class="center"></th>
+
+            </tr>
+        </thead>
+        
+        <tbody id="customers" >
+            <tr style="background-color: #ecf0f5;">
+              <td class="center">{{employee.firstname}} {{employee.lastname}}</td>
+              <td class="center">{{employee.age}}</td>
+                <td class="center">{{employee.designation}}</td>
+         
+                <td class="center">
+                  <button pButton type="button" label="Edit" icon="pi pi-check" style="margin-right: .25em" (click)="editEmployee()"></button>
+                  <button pButton type="button" label="Delete" icon="fa fa-trash-o" class="ui-button-secondary" (click)="deleteEmployee()"></button>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+</div>
+
+</div>
